@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProfilePageJaara.MainPage"
+             >
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="10">
+            <Label Text="Profile"
+                   FontSize="24"
+                   FontAttributes="Bold"/>
+
+            <Frame>
+                <HorizontalStackLayout>
+                    <Frame WidthRequest="100"
+                           HeightRequest="100"
+                           Margin="10"
+                           IsClippedToBounds="True"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           CornerRadius="50"
+                           HasShadow="False"
+                           BackgroundColor="Brown">
+                        <Image Source="maninred.jpg" 
+                               Aspect="AspectFill"
+                               Margin="-20"
+                               HeightRequest="100"
+                               WidthRequest="100"/>
+                    </Frame>
+                    <VerticalStackLayout Padding="10" HorizontalOptions="Center">
+                        <Label Text="Ayeley Shanxing"
+                               FontSize="14"
+                               FontAttributes="Bold"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Start"/>
+
+                        <Label Text="+233 475 847 5446"
+                               FontSize="14"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Start"/>
+
+                        <Label Text="eric409@gmail.com"
+                               FontSize="14"
+                               VerticalOptions="End"
+                               HorizontalOptions="Start"/>
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
+            </Frame>
+
+
+            <VerticalStackLayout Padding="15,20">
+                <FlexLayout JustifyContent="SpaceBetween" AlignItems="Center">
+                    <HorizontalStackLayout>
+                        <Image Source="profilep.svg"
+                                 HeightRequest="48"
+                                 WidthRequest="48"
+                                 HorizontalOptions="Start"
+                               Margin="0,0,15,0"/>
+
+                        <Label Text="View Profile"
+                           FontSize="16"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"/>
+                    </HorizontalStackLayout>
+
+                    <ImageButton Source="chevron.svg"
+                                 HeightRequest="24"
+                                 WidthRequest="24"
+                                 HorizontalOptions="End"
+                                 Clicked="ImageButton_Clicked"/>
+                    
+                </FlexLayout>
+            </VerticalStackLayout>
+
+
+            <VerticalStackLayout Padding="15,20">
+                <FlexLayout JustifyContent="SpaceBetween" AlignItems="Center" >
+                <HorizontalStackLayout>
+                    <Image Source="notificationsp.svg"
+                     HeightRequest="48"
+                     WidthRequest="48"
+                     HorizontalOptions="Start"
+                     Margin="0,0,15,0"      
+                           />
+
+                    <Label Text="Notifications"
+               FontSize="16"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"/>
+                </HorizontalStackLayout>
+
+
+                <ImageButton Source="chevron.svg"
+                     HeightRequest="24"
+                     WidthRequest="24"
+                     HorizontalOptions="End"
+                     Clicked="ImageButton_Clicked_1"/>
+            </FlexLayout>
+            </VerticalStackLayout>
+
+
+
+            <VerticalStackLayout Padding="15,20">
+                <FlexLayout JustifyContent="SpaceBetween" AlignItems="Center">
+                    <HorizontalStackLayout>
+                        <Image Source="pinp.svg"
+                             HeightRequest="48"
+                             WidthRequest="48"
+                             HorizontalOptions="Start"
+                               Margin="0,0,15,0"/>
+
+                        <Label Text="Change Pin"
+                           FontSize="16"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"/>
+                    </HorizontalStackLayout>
+
+
+
+                    <ImageButton Source="chevron.svg"
+                     HeightRequest="24"
+                     WidthRequest="24"
+                     HorizontalOptions="End"
+                     Clicked="ImageButton_Clicked_2"/>
+                </FlexLayout>
+            </VerticalStackLayout>
+        
+
+
+
+            <VerticalStackLayout Padding="15,20">
+                <FlexLayout JustifyContent="SpaceBetween" AlignItems="Center">
+                    <HorizontalStackLayout>
+                        <Image Source="verifiedp.svg"
+                                 HeightRequest="48"
+                                 WidthRequest="48"
+                                 HorizontalOptions="Start"
+                               Margin="0,0,15,0"/>
+
+                        <Label Text="ID Verification"
+                           FontSize="16"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"/>
+                    </HorizontalStackLayout>
+
+
+                    <ImageButton Source="chevron.svg"
+                     HeightRequest="24"
+                     WidthRequest="24"
+                     HorizontalOptions="End"
+                     Clicked="ImageButton_Clicked_3"/>
+                </FlexLayout>
+            </VerticalStackLayout>
+
+
+
+            <VerticalStackLayout Padding="15,20">
+                <FlexLayout JustifyContent="SpaceBetween" AlignContent="Center">
+                    <HorizontalStackLayout>
+                    <Image Source="filep.svg"
+                     HeightRequest="48"
+                     WidthRequest="48"
+                     HorizontalOptions="Start"
+                       Margin="0,0,15,0"/>
+
+                        <Label Text="Terms And Conditions"
+                   FontSize="16"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"/>
+                    </HorizontalStackLayout>
+
+
+                    <ImageButton Source="chevron.svg"
+                     HeightRequest="24"
+                     WidthRequest="24"
+                     HorizontalOptions="End"
+                     Clicked="ImageButton_Clicked_4"/>
+                </FlexLayout>
+            </VerticalStackLayout>
+
+
+
+            <VerticalStackLayout Padding="15,20">
+                <FlexLayout JustifyContent="SpaceBetween" AlignContent="Center">
+                    <HorizontalStackLayout>
+                        <Image Source="warningp.svg"
+                     HeightRequest="48"
+                     WidthRequest="48"
+                     HorizontalOptions="Start"
+                               Margin="0,0,15,0"/>
+
+                        <Label Text="Privacy Policy"
+               FontSize="16"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"/>
+                    </HorizontalStackLayout>
+
+
+                    <ImageButton Source="chevron.svg"
+                     HeightRequest="24"
+                     WidthRequest="24"
+                     HorizontalOptions="End"
+                     Clicked="ImageButton_Clicked_5"/>
+                        
+                    
+                </FlexLayout>
+            </VerticalStackLayout>
+
+
+            <VerticalStackLayout Padding="15,20">
+                <FlexLayout JustifyContent="SpaceBetween" AlignContent="Center">
+                    <HorizontalStackLayout>
+                        <Image Source="messagep.svg"
+                     HeightRequest="48"
+                     WidthRequest="48"
+                     HorizontalOptions="Start"
+                               Margin="0,0,15,0"/>
+
+                        <Label Text="FAQs"
+               FontSize="16"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"/>
+                    </HorizontalStackLayout>
+
+
+                    <ImageButton Source="chevron.svg"
+                     HeightRequest="24"
+                     WidthRequest="24"
+                     HorizontalOptions="End"
+                     Clicked="ImageButton_Clicked_6"/>
+                        
+                    
+                </FlexLayout>
+            </VerticalStackLayout>
+
+
+
+            <VerticalStackLayout Padding="15,20">
+                <FlexLayout JustifyContent="SpaceBetween" AlignContent="Center">
+                    <HorizontalStackLayout>
+                        <Image Source="contactp.svg"
+                     HeightRequest="48"
+                     WidthRequest="48"
+                     HorizontalOptions="Start"
+                               Margin="0,0,15,0"/>
+
+                        <Label Text="Contact Us"
+               FontSize="16"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"/>
+                    </HorizontalStackLayout>
+
+
+                    <ImageButton Source="chevron.svg"
+                     HeightRequest="24"
+                     WidthRequest="24"
+                     HorizontalOptions="End"
+                     Clicked="ImageButton_Clicked_7"/>
+                        
+                    
+                </FlexLayout>
+            </VerticalStackLayout>
+
+
+
+            <VerticalStackLayout Padding="15,20">
+                <FlexLayout JustifyContent="SpaceBetween" AlignContent="Center">
+                    <HorizontalStackLayout>
+                        <Image Source="logoutp.svg"
+                     HeightRequest="48"
+                     WidthRequest="48"
+                     HorizontalOptions="Start"
+                               Margin="0,0,15,0"/>
+                    
+
+                    <Label Text="Logout"
+               FontSize="16"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"/>
+                    </HorizontalStackLayout>
+
+                    <ImageButton Source="chevron.svg"
+         HeightRequest="24"
+         WidthRequest="24"
+         HorizontalOptions="End"
+         Clicked="ImageButton_Clicked_8"/>
+
+                </FlexLayout>
+            </VerticalStackLayout>
+
+
+
+
+
+
+
+
+            <VerticalStackLayout Padding="15,20">
+                <FlexLayout JustifyContent="SpaceBetween" AlignContent="Center">
+                    <HorizontalStackLayout>
+                        <Image Source="deleter.svg"
+                     HeightRequest="48"
+                     WidthRequest="48"
+                     HorizontalOptions="Start"
+                               Margin="0,0,15,0"/>
+
+                        <Label Text="Delete"
+               FontSize="16"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"/>
+                    </HorizontalStackLayout>
+
+
+                    <ImageButton Source="chevron.svg"
+                     HeightRequest="24"
+                     WidthRequest="24"
+                     HorizontalOptions="End"
+                     Clicked="ImageButton_Clicked_9"/>
+
+                </FlexLayout>
+            </VerticalStackLayout>
+
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
