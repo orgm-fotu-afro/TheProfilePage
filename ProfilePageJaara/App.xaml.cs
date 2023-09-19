@@ -1,4 +1,6 @@
-﻿namespace ProfilePageJaara
+﻿using ProfilePageJaara.MVVM.Views;
+
+namespace ProfilePageJaara
 {
     public partial class App : Application
     {
@@ -6,7 +8,7 @@
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new DataView();
         }
     }
 }

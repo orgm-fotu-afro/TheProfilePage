@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProfilePageJaara.MVVM.Views.DataView"
+             Title="DataView">
+
+    <ScrollView>
+    <VerticalStackLayout>
+        <Label Text="Profile" FontSize="24" FontAttributes="Bold"/>
+        
+            <HorizontalStackLayout>
+                <Frame WidthRequest="100"
+                       Padding="15,20"
+                   HeightRequest="100"
+                   Margin="10"
+                   IsClippedToBounds="True"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   CornerRadius="50"
+                   HasShadow="False"
+                   BackgroundColor="Brown">
+                    <Image Source="pexelsborba.jpg" 
+                       Aspect="AspectFill"
+                       Margin="-20"
+                       HeightRequest="100"
+                       WidthRequest="100"/>
+                </Frame>
+                <VerticalStackLayout Padding="20" HorizontalOptions="Center">
+                    <Label Text="Ayeley Shanxing"
+                       FontSize="20"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Start" Margin="0,0,0,10"/>
+
+                    <Label Text="+233 475 847 5446"
+                       FontSize="14"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Start" Margin="0,0,0,10"/>
+
+                    <Label Text="eric409@gmail.com"
+                       FontSize="14"
+                       VerticalOptions="End"
+                       HorizontalOptions="Start"/>
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+        
+
+           
+        <CollectionView ItemsSource="{Binding PageElements}">
+            
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <VerticalStackLayout Padding="15,20">
+                            
+                            <FlexLayout JustifyContent="SpaceBetween" AlignItems="Center">
+                                <HorizontalStackLayout>
+                                    <Frame WidthRequest="48"
+                                        HeightRequest="48"
+                                        Margin="10"
+                                        IsClippedToBounds="True"
+                                        HorizontalOptions="Center"
+                                        VerticalOptions="Center"
+                                        CornerRadius="50"
+                                        HasShadow="False"
+                                        BackgroundColor="#EDE7FB">
+                                        <Image Source="{Binding Image}"  VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="24" WidthRequest="24" Margin="0,0,0,0"/>
+                                    </Frame>
+                                    <Label Text="{Binding Name}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="16"/>
+                                </HorizontalStackLayout>
+                                <Image Source="{Binding Chevvy}" HeightRequest="24" WidthRequest="24"/>
+                            </FlexLayout>
+                            
+                        </VerticalStackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            
+            </CollectionView>
+        
+        
+    </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

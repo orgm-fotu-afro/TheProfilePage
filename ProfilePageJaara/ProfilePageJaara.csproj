@@ -49,30 +49,30 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <AndroidResource Remove="NewFolder1\**" />
+	  <Compile Remove="NewFolder1\**" />
+	  <EmbeddedResource Remove="NewFolder1\**" />
+	  <MauiCss Remove="NewFolder1\**" />
+	  <MauiXaml Remove="NewFolder1\**" />
+	  <None Remove="NewFolder1\**" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <None Remove="Resources\Images\ambassador.jpg" />
-	  <None Remove="Resources\Images\chevron.svg" />
-	  <None Remove="Resources\Images\contactp.svg" />
-	  <None Remove="Resources\Images\deletep.svg" />
-	  <None Remove="Resources\Images\deleter.svg" />
 	  <None Remove="Resources\Images\example.jpg" />
-	  <None Remove="Resources\Images\filep.svg" />
-	  <None Remove="Resources\Images\logoutp.svg" />
-	  <None Remove="Resources\Images\maninred.jpg" />
-	  <None Remove="Resources\Images\messagep.svg" />
-	  <None Remove="Resources\Images\notificationsp.svg" />
-	  <None Remove="Resources\Images\notificationspurp.svg" />
-	  <None Remove="Resources\Images\pinp.svg" />
-	  <None Remove="Resources\Images\pinpurp.svg" />
-	  <None Remove="Resources\Images\profilep.svg" />
-	  <None Remove="Resources\Images\profilepurp.svg" />
-	  <None Remove="Resources\Images\verifiedp.svg" />
-	  <None Remove="Resources\Images\verifiedpurp.svg" />
-	  <None Remove="Resources\Images\warningp.svg" />
-	  <None Remove="Resources\Images\warningpurp.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="CorrectedMainPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="MVVM\Views\DataView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>
